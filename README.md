@@ -50,7 +50,7 @@ pip install transformers==4.49.0 transformers-stream-generator==0.0.5
 ```
 
 ## Weights
-- [Huggingface](https://huggingface.co/liufanfanlff/C3-Context-Cascade-Compression)
+- [Huggingface](https://huggingface.co/liufanfanlff/C3-Context-Cascade-Compression) （Version with 32 latent tokens）
 
 
 ## Benchmarks
