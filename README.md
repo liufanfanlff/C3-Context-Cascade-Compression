@@ -7,7 +7,7 @@
 <a href="https://arxiv.org/abs/2511.15244"><img src="https://img.shields.io/badge/Paper-PDF-orange"></a> 
 
 
-[Fanfan Liu](https://scholar.google.com/citations?user=LPaXZEUAAAAJ&hl=en), [Haibi Qiu](https://scholar.google.com/citations?user=O5gH5vkAAAAJ&hl=en)
+[Fanfan Liu](https://scholar.google.com/citations?user=LPaXZEUAAAAJ&hl=en), [Haibo Qiu](https://scholar.google.com/citations?user=O5gH5vkAAAAJ&hl=en)
 
 
 <p align="center">
