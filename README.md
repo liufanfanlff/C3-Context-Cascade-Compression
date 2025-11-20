@@ -17,8 +17,8 @@
 
 ## Release
 
-- [2024/9/03]🔥🔥🔥 We open-source the codes, weights. The paper can be found in this [repo](https://github.com/liufanfanlff/C3-Context-Cascade-Compression/blob/main/C3.pdf).  
-- [2025/9/03]🔥🔥🔥 We release the C3 model! 
+- [2025/11/20]🔥🔥🔥 We open-source the codes, weights. The paper can be found in this [repo](https://github.com/liufanfanlff/C3-Context-Cascade-Compression/blob/main/C3.pdf).  
+- [2025/11/20]🔥🔥🔥 We release the C3 model! 
 
 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
