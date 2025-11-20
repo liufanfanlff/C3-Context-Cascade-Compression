@@ -1,6 +1,6 @@
 from transformers import AutoModel, AutoTokenizer
 
-model_name = '../liufanfanlff/C3-Context-Cascade-Compression'
+model_name = 'liufanfanlff/C3-Context-Cascade-Compression'
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 model = AutoModel.from_pretrained(model_name, trust_remote_code=True, low_cpu_mem_usage=True, device_map='cuda', use_safetensors=True, pad_token_id=tokenizer.eos_token_id)
 model = model.eval().cuda()
