@@ -1,8 +1,8 @@
 from transformers import AutoModel, AutoTokenizer
 
-
-tokenizer = AutoTokenizer.from_pretrained('/mnt/dolphinfs/ssd_pool/docker/user/hadoop-basecv-hl/hadoop-basecv/user/liufanfan/MM_out/C3_latent32_release/checkpoint-1', trust_remote_code=True)
-model = AutoModel.from_pretrained('/mnt/dolphinfs/ssd_pool/docker/user/hadoop-basecv-hl/hadoop-basecv/user/liufanfan/MM_out/C3_latent32_release/checkpoint-1', trust_remote_code=True, low_cpu_mem_usage=True, device_map='cuda', use_safetensors=True, pad_token_id=tokenizer.eos_token_id)
+model_name = '../liufanfanlff/C3-Context-Cascade-Compression'
+tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+model = AutoModel.from_pretrained(model_name, trust_remote_code=True, low_cpu_mem_usage=True, device_map='cuda', use_safetensors=True, pad_token_id=tokenizer.eos_token_id)
 model = model.eval().cuda()
 
 prompt = 'Repeat the text: '
