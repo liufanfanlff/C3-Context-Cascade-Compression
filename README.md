@@ -36,7 +36,7 @@
 
 ## Install
 
-1. Clone this repository and navigate to the GOT folder
+1. Clone this repository and navigate to the C3 folder
 ```bash
 git clone https://github.com/liufanfanlff/C3-Context-Cascade-Compression.git
 ```
