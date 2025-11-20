@@ -27,7 +27,7 @@
 
 ## Contents
 - [Install](#install)
-- [GOT Weights](#got-weights)
+- [Weights](#weights)
 - [Benchmarks](#benchmarks)
 - [Demo](#demo)
 
@@ -49,7 +49,7 @@ pip install transformers==4.49.0 transformers-stream-generator==0.0.5
 
 ```
 
-## GOT Weights
+## Weights
 - [Huggingface](https://huggingface.co/liufanfanlff/C3-Context-Cascade-Compression)
 
 
