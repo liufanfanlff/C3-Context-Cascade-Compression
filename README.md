@@ -16,7 +16,7 @@
 
 
 ## Release
-
+- [2026/1/13]🔥🔥🔥 We open the train code
 - [2025/11/20]🔥🔥🔥 We open-source the codes, weights. The paper can be found in this [repo](https://github.com/liufanfanlff/C3-Context-Cascade-Compression/blob/main/C3.pdf).  
 - [2025/11/20]🔥🔥🔥 We release the C3 model! 
 
@@ -74,6 +74,37 @@ print ("Repeat the text: ",outputs)
 or you can:
 ```Shell
 python3 /C3-master/C3-hf/run_c3.py
+ ```
+
+## Train
+```Shell
+export PYTHONPATH=../C3-Context-Cascade-Compression/C3-master:$PYTHONPATH
+
+deepspeed C3-master/C3/train/train.py \
+ --deepspeed GOT-OCR-2.0-master/zero_config/zero2.json  \
+ --model_name_or_path  ../C3_model_path \
+ --use_im_start_end True   \
+ --bf16 True   \
+ --gradient_accumulation_steps 16    \
+ --evaluation_strategy "no"   \
+ --save_strategy "steps"  \
+ --save_steps 5000   \
+ --save_total_limit 1   \
+ --weight_decay 0.    \
+ --warmup_ratio 0.01     \
+ --lr_scheduler_type "cosine"    \
+ --tf32 True     \
+ --model_max_length 8192    \
+ --gradient_checkpointing True   \
+ --dataloader_num_workers 8    \
+ --report_to none  \
+ --per_device_train_batch_size 2    \
+ --num_train_epochs 5  \
+ --learning_rate 1e-5   \
+ --data_path  ../dataset/train_test_data.json \
+ --output_dir ../output_dir \
+ --run_name context_32 \
+ --logging_steps 10 \
  ```
 
 viz
