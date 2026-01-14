@@ -16,7 +16,7 @@
 
 
 ## Release
-- [2026/1/13]🔥🔥🔥 We open the train code
+- [2026/1/13]🔥🔥🔥 We open-sourced the training code！
 - [2025/11/20]🔥🔥🔥 We open-source the codes, weights. The paper can be found in this [repo](https://github.com/liufanfanlff/C3-Context-Cascade-Compression/blob/main/C3.pdf).  
 - [2025/11/20]🔥🔥🔥 We release the C3 model! 
 
@@ -81,7 +81,7 @@ python3 /C3-master/C3-hf/run_c3.py
 export PYTHONPATH=../C3-Context-Cascade-Compression/C3-master:$PYTHONPATH
 
 deepspeed C3-master/C3/train/train.py \
- --deepspeed GOT-OCR-2.0-master/zero_config/zero2.json  \
+ --deepspeed C3-master/zero_config/zero2.json  \
  --model_name_or_path  ../C3_model_path \
  --use_im_start_end True   \
  --bf16 True   \
