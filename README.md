@@ -44,7 +44,7 @@ git clone https://github.com/liufanfanlff/C3-Context-Cascade-Compression.git
 ```Shell
 conda create -n got python=3.10 -y
 conda activate got
-pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu118
+pip install six==1.17.0 torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu118
 pip install transformers==4.49.0 transformers-stream-generator==0.0.5
 
 ```
